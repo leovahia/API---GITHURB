@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GIT-Users</title>
+        <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/ ">
+        <link rel="stylesheet" href="apiGit.css">
+    </head>
+    <body>
+        <main>
+            <h1 class="titulo">GIT-Users</h1>
+            <div class="container">
+                <p>Digite o usuário do GitHub para visualizar seus projetos.</p>
+                <input class="textoBusca"type="text" placeholder="Nome de usuário do GitHub">
+                <button class="buscar" type="button" onclick="buscar()">Buscar</button>
+                <div class="github">
+                    <div id="userInfo"></div>
+                    <div id="userRepositorio"></div>
+                </div>
+            </div>
+         
+        </main>
+        <script src="./model/modelUser.js"></script>
+        <script src="./model/modelReposi.js"></script>
+        <script src="./controller/controllerUser.js"></script>
+        <script src="./controller/controllerReposi.js"></script>
+        <script src="./view/viewUser.js"></script>
+        <script src="./view/viewReposi.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
